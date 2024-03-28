@@ -1,29 +1,38 @@
 {
-  "name": "array-bounds",
-  "version": "1.0.1",
-  "description": "Find [nd-]array min/max values",
-  "main": "index.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "test": "node test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dfcreative/array-bounds.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [
-    "array",
-    "bounds",
-    "limits",
-    "array min",
-    "min",
-    "max",
-    "statistics",
-    "samples"
-  ],
-  "author": "Dima Yv <dfcreative@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dfcreative/array-bounds/issues"
-  },
-  "homepage": "https://github.com/dfcreative/array-bounds#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
